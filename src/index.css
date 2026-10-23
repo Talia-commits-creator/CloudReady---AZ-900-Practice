@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #F8F7F4;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #F3F1EC;
+    --text-primary: #12151A;
+    --text-secondary: #58616E;
+    --text-tertiary: #8B94A0;
+    --border-subtle: #E8E5DC;
+    --border-medium: #DCD7CB;
+    
+    /* Cobalt Azure primary accent */
+    --accent-cobalt: #0C4FD7;
+    --accent-cobalt-hover: #093FB0;
+    --accent-cobalt-soft: #EFF4FF;
+    --accent-cobalt-border: #D0E0FD;
+
+    /* Mint/Sage secondary accent */
+    --accent-mint: #1A7B54;
+    --accent-mint-soft: #EAF6F0;
+    --accent-mint-border: #CCE9DB;
+
+    /* Terracotta for mistakes / alerts */
+    --accent-terracotta: #C04328;
+    --accent-terracotta-soft: #FDF2EF;
+    --accent-terracotta-border: #F5D3CA;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Editorial typography styles */
+  .font-display {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+
+  .font-serif-accent {
+    font-family: 'Fraunces', Georgia, serif;
+    font-feature-settings: "opsz" 32;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Perspective & 3D card flip styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCD7CB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B2A4;
+}

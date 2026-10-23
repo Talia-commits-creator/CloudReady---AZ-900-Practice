@@ -1,0 +1,6 @@
+{
+  "name": "CloudReady — AZ-900 Practice Lab",
+  "description": "An editorial AZ-900 Microsoft Azure Fundamentals exam prep lab with 30 authentic practice questions, flashcards, diagnostic scoring, and rule-based study recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
